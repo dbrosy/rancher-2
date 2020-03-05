@@ -8,5 +8,5 @@ services:
         ports:
           - "80:80"
           - "443:443"
-        command: --acme-domain $domain
+        command: --acme-domain ${DOMAIN}
     
