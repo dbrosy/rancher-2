@@ -8,5 +8,10 @@ services:
         ports:
           - "80:80"
           - "443:443"
+        volumes:
+          - rancher-data:/var/lib/rancher
         command: --acme-domain ${DOMAIN}
     
+volumes:
+    rancher-data:
+        external: true
