@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
     rancher:
-        image: rancher/rancher:latest
+        image: rancher/rancher:${VERSION}
         container_name: rancher
         restart: unless-stopped
         ports:
