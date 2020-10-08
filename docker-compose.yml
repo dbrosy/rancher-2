@@ -10,9 +10,7 @@ services:
           - "443:443"
         volumes:
           - rancher-data:/var/lib/rancher
-        command: 
-#          - --privileged
-          - --acme-domain ${DOMAIN}
+        command: --acme-domain ${DOMAIN}
     
 volumes:
     rancher-data:
