@@ -5,6 +5,7 @@ services:
         image: rancher/rancher:${VERSION}
         container_name: rancher
         restart: unless-stopped
+        privileged: true
         ports:
           - "80:80"
           - "443:443"
