@@ -11,7 +11,7 @@ services:
         volumes:
           - rancher-data:/var/lib/rancher
         command: 
-          - --privileged
+#          - --privileged
           - --acme-domain ${DOMAIN}
     
 volumes:
